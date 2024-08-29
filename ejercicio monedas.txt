@@ -1,0 +1,28 @@
+// Para el mensaje de bienvenida use caracteres especiales asi le daba un marco
+Console.WriteLine("**************************************************");
+Console.WriteLine("*           ¡Bienvenidos al sistema de          *");
+Console.WriteLine("*             conteo de monedas!                *");
+Console.WriteLine("**************************************************");
+
+// Pedir al jugador la cantidad de monedas
+Console.Write("Ingrese la cantidad de monedas de oro: ");
+int monedasOro = int.Parse(Console.ReadLine());
+
+Console.Write("Ingrese la cantidad de monedas de plata: ");
+int monedasPlata = int.Parse(Console.ReadLine());
+
+Console.Write("Ingrese la cantidad de monedas de bronce: ");
+int monedasBronce = int.Parse(Console.ReadLine());
+
+// Calcular el total de monedas
+int totalMonedas = monedasOro + monedasPlata + monedasBronce;
+
+// Calcular el valor total
+int valorTotal = (monedasOro * 5) + (monedasPlata * 3) + (monedasBronce * 1);
+
+// Mostrar los resultados
+Console.WriteLine("Total de monedas: " + totalMonedas);
+Console.WriteLine("Valor total de las monedas: " + valorTotal);
+
+// Mensaje de despedida al final
+Console.WriteLine("<3 ¡Gracias por usar el sistema de conteo de monedas! <3");
